@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단메뉴 반응형 홈페이지를 만들면서 potion을 이해하기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- custom.js는 적용이 안되기때문에 옆에 defer넣기 -->
+    <script src="./js/custom.js" defer></script>
+</head>
+
+<body>
+    <!-- <button id="btn"> 
+        <i class="xi-arrow-left"> </i> 누르기
+    </button>
+    누르기
+    <h1>누르기</h1>
+    -->
+
+    <!-- position 과 display 를 응용하여 반응형 홈페이지 만들기 -->
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1><a href="">Lee's responsive web</a></h1>
+                <!--  -->
+                <nav class="gnb">
+
+
+                    <!-- 단축키 ul>li>a 엔터 =  <li><a href=""></a></li>    -->
+                    <ul>
+                        <li>
+                            <a href="">menu01</a>
+                            <ul class="sub">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">menu02</a>
+                            <ul class="sub">
+
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">menu03</a>
+                            <ul class="sub">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">menu04</a>
+                            <ul class="sub">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">menu05</a>
+                            <ul class="sub">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mbtn">
+                    <!-- .i xi-bars -->
+                    <i class="xi-bars"></i>
+
+                </div>
+
+            </div>
+        </header>
+        <main class="main">
+            <!-- 하나의 큰 박스 섹션 mainvisual -->
+            <section class="mainvisual"></section>
+        </main>
+        <footer class="footer">
+            &copy; Lee's responsive web.
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+const MBTN = document.querySelector('.mbtn');
+const GNB = document.querySelector('.gnb');
+
+MBTN.addEventListener('click', function(){
+    GNB.classList.toggle('on')  
+});
+
+const MLI = document.querySelectorAll('.gnb>ul>li>a');
+
+console.log(MLI)
+
+MLI.forEach(function(it, idx){
+    it.addEventListener('click', function(e) {
+        // // 
+        e.preventDefault();
+        console.log(this.nextElementSibling);
+        this.nextElementSibling.classList.add('on');
+    });
+})
